@@ -1,39 +1,46 @@
 import React, { Component } from 'react'
 import { MenuItems } from "./MenuItems"
-import { Button } from "../Button"
-import './Navbar.css'
+import { Link } from 'react-router-dom'
+import '../Css/Navbar.css'
+
+const navStyle = {
+  textDecoration: "none"
+};
 
 class Navbar extends Component {
-  /* state to manage state of menu icon  */
+  
+  /* state to manage state of mobile menu icon  */
   state = { clicked: false }
   
-  /* function to handle the clicks on menu icon   */
+  /* function to handle the clicks on mobile menu icon   */
   handleClick = ()=> {
     this.setState({ clicked: !this.state.clicked })
   }
-
+  
   render(){
     return(
       <nav className="NavbarItems">
-        <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
+        <Link style= { navStyle } to="/">
+          <h1 className="navbar-logo">tapiwa</h1>
+        </Link>
+
+        {/* MOBILE MENU ICON SECTION */}
         <div className="menu-icon" onClick={this.handleClick}>
           <i className={this.state.clicked ? 'fas fa-times': 'fas fa-bars'}></i>
-          {/* condition to change icon if menu icon i clicked */}
+          {/* conditional to change icon if mobile menu icon if clicked  */}
         </div>
-        {/* condition to change nav menu  styles when clicked   */}
+        {/* condition to change mobile nav menu  styles when clicked   */}
         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-        {/* function to loop through and display menu items   */}
+
+        {/* looping through MenuItems and displaying them with LI tag */}
           {MenuItems.map((item, index) => {
             return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}> 
-                  {item.title}
-                </a>
-              </li>
+              <Link  style= { navStyle } to={ item.url }>
+                <li className={item.cName} key={index}>{item.title}</li>
+              </Link>
             )
           })}    
-        </ul>
-        <Button>Sign Up</Button>
+        </ul>       
       </nav>
     )
   }
