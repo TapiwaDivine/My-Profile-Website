@@ -1,11 +1,62 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
+import { v4 as uuid } from "uuid";
+
+import { PROFILE_DETAIL, PROFILE_IMAGE } from "../constants";
+import Heading from "../shared/Heading";
+import Paragraph from "../shared/Paragraph";
+import { center } from "../../styles";
+
+const Container = styled.div`
+  background-color: #fff;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+`;
+
+const ImageContainer = styled.div`
+  ${center};
+  flex-direction: column;
+
+  width: 50%;
+  height: 100%;
+`;
+
+const ProfileImage = styled.img`
+  object-fit: contain;
+  z-index: 0;
+  width: auto;
+  max-height: 40rem;
+  position: relative;
+  bottom: -10px;
+`;
+
+const Content = styled.div`
+  ${center};
+  width: 50%;
+  flex-direction: column;
+  padding: 0 7rem;
+  font-size: 1.6rem;
+`;
 
 function About() {
   return (
-    <div>
-      <h1>About Page</h1>
-    </div>
-  )
+    <Container>
+      <ImageContainer>
+        <ProfileImage src={PROFILE_IMAGE} />
+      </ImageContainer>
+      <Content>
+        <Heading content="About me" />
+        <div>
+          {Object.values(PROFILE_DETAIL).map((value) => {
+            return <Paragraph key={uuid()} content={value} />;
+          })}
+        </div>
+      </Content>
+    </Container>
+  );
 }
 
-export default About
+export default About;

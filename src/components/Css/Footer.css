@@ -1,33 +1,34 @@
 .footer {
-   background-color: #232121;
-   height: 15vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 2rem;
-   position: relative;
+  background-color: #232121;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .fab {
-   position: absolute;
-   font-size: 2.5rem;
-   color: #fff;
-   top: 25%;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #fff;
+  top: 25%;
 }
 
 .fa-linkedin {
-   position: absolute;
-   left: 45%;  
+  position: absolute;
+  left: 45%;
 }
 
 .fa-github {
-   position: absolute;
-   right: 45%;  
+  position: absolute;
+  right: 45%;
 }
 
 .copyright {
-   position: absolute;
-   color: #fff;
-   font-size: 1rem;
-   bottom: 5%;
+  position: absolute;
+  color: #fff;
+  font-size: 1rem;
+  bottom: 5%;
 }

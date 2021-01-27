@@ -27,9 +27,8 @@ class Navbar extends Component {
         {/* MOBILE MENU ICON SECTION */}
         <div className="menu-icon" onClick={this.handleClick}>
           <i className={this.state.clicked ? 'fas fa-times': 'fas fa-bars'}></i>
-          {/* conditional to change icon if mobile menu icon if clicked  */}
         </div>
-        {/* condition to change mobile nav menu  styles when clicked   */}
+    
         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
 
         {/* looping through MenuItems and displaying them with LI tag */}

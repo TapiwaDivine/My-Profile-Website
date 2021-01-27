@@ -1,0 +1,111 @@
+.herotext-mobile {
+  display: none;
+}
+
+.myName {
+  color: #b22222;
+}
+
+.skillHighlight {
+  position: absolute;
+  top: 66%;
+  left: 28%;
+  transform: translateX(-100%) translateY(0%);
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.contacting-btn {
+  width: 18rem;
+  height: 6rem;
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  left: 25%;
+  transform: translateX(-100%) translateY(0%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #b22222;
+  font-size: 1.5rem;
+  border: 3px solid #b22222;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  transition: ease-out 0.3s;
+}
+.contacting-btn:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.contacting-btn:before {
+  transition: 0.3s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #b22222;
+}
+
+.contacting-btn:hover:before {
+  transition: 0.3s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/************************************** Hero Media queries ***********************/
+@media screen and (max-width: 960px) {
+  .hero-container {
+    background-position: 45% 100%;
+    background-size: 180%;
+    width: 100%;
+    height: 85vh;
+    box-shadow: inset 5px 0px 100px 2px #232321;
+    position: relative;
+  }
+  .hero-text {
+    display: none;
+  }
+
+  .herotext-mobile {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    position: absolute;
+    top: 70%;
+    left: 54%;
+    transform: translateX(-100%) translateY(0%);
+    font-size: 1.6em;
+    display: inline;
+    margin-block-start: auto;
+    margin-block-end: auto;
+  }
+
+  .myName {
+    display: inherit;
+    font-weight: bold;
+  }
+  .skillHighlight {
+    top: 90%;
+    left: 62%;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateX(-100%) translateY(0%);
+  }
+  .contacting-btn-btn {
+    top: 66%;
+    left: 47%;
+    font-weight: 800;
+    padding: 1em 1.5em;
+  }
+}
