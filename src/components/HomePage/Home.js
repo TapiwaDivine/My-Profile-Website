@@ -3,19 +3,16 @@ import "../Css/Homepage.css";
 import Heading from "../shared/Heading";
 import styled from "styled-components";
 import { INTRO_TEXT } from "../constants";
-import { primaryButton } from "../../styles";
+import { primaryButton, divStyles } from "../../styles";
 
 const Container = styled.div`
+  ${divStyles}
   background: url("https://res.cloudinary.com/deesjttvu/image/upload/v1606430017/tapiwagrey_uopbz3.png")
     no-repeat;
   background-color: #92958d;
   background-position: 73% 100%;
   background-size: 55%;
-  width: 100%;
-  height: 85vh;
   display: block;
-  position: relative;
-  flex-direction: column;
   align-items: center;
   box-shadow: inset 5px 0px 100px 40px #232321;
   object-fit: contain;

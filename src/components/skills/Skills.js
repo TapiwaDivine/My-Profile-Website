@@ -1,36 +1,54 @@
-import React, { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import React from "react";
+import styled from "styled-components";
 
-const Skills = () => {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  });
+import { divStyles } from "../../styles";
+import ProfileImage from "./SkillsTop/ProfileImage";
+import SkillsContent from "./SkillsTop/SkillsContent";
+import SkillsSection from "./SkillsMidDiv/SkillsSection";
 
-  const [submitted, setSubmitted] = useState(false);
+const Container = styled.div`
+  ${divStyles}
+`;
 
-  const handleChange = (ev) =>
-    setFormData({ ...formData, [ev.target.name]: ev.target.value });
-
-  const handleSubmit = () => {
-    setSubmitted((prevSubmit) => !prevSubmit);
-  };
-  console.log({ formData });
-  //   useEffect(() => {
-  //     if (!search) return undefined;
-  //     setUserName(search);
-  //   }, [search]);
-
-  return (
-    <div style={{ minHeight: "100vh" }}>
-      <h1>{submitted ? "Form submitted" : "Please fill in form"}</h1>
-      <input placeholder="Email" name="email" onChange={handleChange} />
-      <input placeholder="Password" name="password" onChange={handleChange} />
-      <div>
-        <button onClick={handleSubmit}>Submit</button>
-      </div>
-    </div>
+const ContentBlock = styled.div`
+  display: flex;
+  padding: 0px 10% 3rem;
+  min-height: 300px;
+  position: relative;
+  align-items: center;
+  justify-content: start;
+  gap: 4rem;
+`;
+const Line = styled.hr`
+  border: 0;
+  height: 1px;
+  width: 70%;
+  margin: auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
   );
-};
+`;
+
+function Skills(props) {
+  return (
+    <Container>
+      <ContentBlock>
+        <ProfileImage />
+        <SkillsContent />
+      </ContentBlock>
+      <Line />
+      <ContentBlock>
+        <SkillsSection />
+      </ContentBlock>
+      <Line />
+      <ContentBlock>
+        <SkillsSection />
+      </ContentBlock>
+    </Container>
+  );
+}
 
 export default Skills;

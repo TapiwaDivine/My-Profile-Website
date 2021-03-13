@@ -1,12 +1,11 @@
 .footer {
   background-color: #232121;
   height: 15vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   position: relative;
-  z-index: 1;
 }
 
 .fab {

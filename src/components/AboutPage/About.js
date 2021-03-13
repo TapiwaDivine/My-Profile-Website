@@ -1,25 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import { v4 as uuid } from "uuid";
+import { useParams } from "react-router-dom";
 
 import { PROFILE_DETAIL, PROFILE_IMAGE } from "../constants";
 import Heading from "../shared/Heading";
 import Paragraph from "../shared/Paragraph";
-import { center } from "../../styles";
+import { center, divStyles } from "../../styles";
 
 const Container = styled.div`
+  ${divStyles}
   background-color: #fff;
-  width: 100%;
-  height: 85vh;
   display: flex;
-  position: relative;
   align-items: center;
 `;
 
 const ImageContainer = styled.div`
   ${center};
   flex-direction: column;
-
   width: 50%;
   height: 100%;
 `;
@@ -41,7 +39,8 @@ const Content = styled.div`
   font-size: 1.6rem;
 `;
 
-function About() {
+function About(props) {
+  const { name } = useParams();
   return (
     <Container>
       <ImageContainer>
@@ -55,6 +54,7 @@ function About() {
           })}
         </div>
       </Content>
+      {name}
     </Container>
   );
 }

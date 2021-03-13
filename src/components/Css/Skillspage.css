@@ -1,0 +1,11 @@
+.card {
+  max-width: 316px;
+  height: 260px;
+  padding-bottom: 4rem;
+}
+.card-img-top {
+  max-height: 16rem;
+}
+.card-deck .card {
+  padding-bottom: 10rem;
+}
