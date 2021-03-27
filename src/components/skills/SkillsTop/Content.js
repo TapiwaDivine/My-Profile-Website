@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 50%;
   text-align: left;
-  padding-bottom: 5px;
+  padding-bottom: .5rem;
 `;
 
 const Content = ({ header, paragraph }) => {

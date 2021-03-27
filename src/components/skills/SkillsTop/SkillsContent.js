@@ -4,31 +4,27 @@ import styled from "styled-components";
 import { SKILLS } from "../../constants";
 import Content from "./Content";
 
-const Row = styled.div``;
-
 const Container = styled.div`
-  border: 2px solid #f4f4f4;
-  padding: 10px;
-  border-radius: 4px;
+  border: .3rem solid #f4f4f4;
+  padding: 1rem;
+  border-radius: .4rem;
 `;
 
-const Column = styled.div`
+const InnerContainer = styled.div`
   display: flex;
   position: relative;
-  height: 50%;
+  height: 63%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: start;
 `;
 
 const SkillsContent = () => {
   return (
     <Container>
-      <Row className="header">
-        <h4>Expertise</h4>
-      </Row>
+      <h4>Expertise</h4>
 
-      <Column>
+      <InnerContainer>
         {SKILLS.map((skill, index) => {
           return (
             <Content
@@ -38,7 +34,7 @@ const SkillsContent = () => {
             />
           );
         })}
-      </Column>
+      </InnerContainer>
     </Container>
   );
 };

@@ -1,25 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 
-const Row = styled.div`
+import { FRONTEND_TOOLS, BACKEND_TOOLS, WEB_DESIGN_TOOLS } from "../../constants";
+import SubContainer from "./SubContainer"
+
+const Wrapper = styled.div`
   display: flex;
-  min-height: 240px;
-  align-items: center;
-  padding: 20px 0;
+  flex-direction: column;
+  padding:7rem;
+`;
+const SectionHeader = styled.h3`
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin: 0 auto 9rem auto;
+  padding: 3rem;
 `;
 
-const Column = styled.div`
-  flex: ${(props) => props.size};
-  height: 40%;
-  padding: 0 10px;
-`;
-
-const SkillsBlock = ({ leftSize, rightSize, contentLeft, contentRight }) => {
+const SkillsBlock = () => {
   return (
-    <Row>
-      <Column size={leftSize}>{contentLeft}</Column>
-      <Column size={rightSize}>{contentRight}</Column>
-    </Row>
+    <Wrapper>
+      <SectionHeader>Programming Languages and Tools Used</SectionHeader>
+      <SubContainer list={FRONTEND_TOOLS} heading="Front End Skills" />
+      <SubContainer list={BACKEND_TOOLS} heading="Backend End Skills" />
+      <SubContainer list={WEB_DESIGN_TOOLS} heading="Web Designing Skills" />
+    </Wrapper>
   );
 };
 

@@ -6,8 +6,8 @@ import { center } from "../../../styles";
 
 const Container = styled.div`
   ${center};
-  min-width: 200px;
-  height: 178px;
+  min-width: 20rem;
+  height: 17rem;
   position: relative;
 
   img {

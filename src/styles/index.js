@@ -17,6 +17,7 @@ const divStyles = css`
 const primaryButton = css`
   color: red;
   padding: 1rem;
+
 `;
 
-export { center, primaryButton, divStyles };
+export { center, primaryButton,  divStyles };

@@ -62,3 +62,32 @@ export const TECHSKILLS = [
     text: `I am good retrieval of information, hypothesizing, decision-making, evaluating and raising question which make me easy to work with`,
   },
 ];
+export const FRONTEND_TOOLS = [
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446347/5847f5c3cef1014c0b5e489d_sfnhnq.png", name: "HTML5" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446348/kisspng-html-css3-cascading-style-sheets-logo-markup-langu-digital-agency-5aeb5d7402a5d9.8524379515253743240109_kif80w.png", name: "CSS3" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616450114/1024px-Unofficial_JavaScript_logo_2.svg_ojzrpe.png", name: "Javascript - ES5, ES6" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446349/pngaaa.com-2507896_a1vclt.png", name: "React JS" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446348/imgbin_d3-js-javascript-library-data-visualization-png_zcspjg.png", name: "D3 JS" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446348/jing.fm-python-clipart-537670_t24xuv.png", name: "Python" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446348/kisspng-django-web-development-web-framework-python-softwa-django-5b45d914274e46.055745571531304212161_zyffpo.png", name: "Django" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446348/kisspng-flask-web-framework-python-software-framework-jinj-flask-5ae13d5fb00683.122689531524710751721_shnnfj.png", name: "Flask" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616711329/1200px-Bootstrap_logo.svg_p23ysr.png", name: "Bootstrap 4" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446348/pinpng.com-css-logo-png-2047356_qzgqxx.png", name: "MaterializeCSS" },
+  
+];
+
+export const BACKEND_TOOLS = [
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616711445/Stripe_logo__revised_2016_jdppo0.png", name: "Stripe JS" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616712465/1280px-Node.js_logo.svg_topk5w.png", name: "Node JS" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616771481/MongoDB-Logo_dpsg4u.jpg", name: "MongoDB" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616704400/1200px-Postgresql_elephant.svg_z04oem.png", name: "PostgreSQL" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616704400/MySQL-Logo.wine_nox0u8.png", name: "MySQL" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446347/1200px-Amazon-S3-Logo.svg_zyw2hf.png", name: "AWS S3" },
+];
+
+export const WEB_DESIGN_TOOLS = [
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446347/figma-logo-png-1-Transparent-Images_kqgscm.png", name: "FIGMA" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446348/photoshop-logo-0_c3cdsw.png", name: "Photoshop" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616704364/coreldraw-wikipedia-corel-draw-png-1200_1284_f32bqq.png", name: "Corel Draw" },
+  { icon: "https://res.cloudinary.com/deesjttvu/image/upload/v1616446347/768px-Inkscape_logo_2.svg_x92hnq.png", name: "Ink Scape" },
+];

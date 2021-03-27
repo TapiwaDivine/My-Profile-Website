@@ -1,15 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-const StyledH1 = styled.h1``
+const StyledH1 = styled.h1``;
 
-const Heading = ({content}) => {
+const Heading = ({ content }) => {
+  return <StyledH1>{content}</StyledH1>;
+};
 
-   return (
-      <StyledH1>
-         {content}
-      </StyledH1>
-   )
-}
-
-export default Heading
+export default Heading;

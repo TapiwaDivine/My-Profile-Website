@@ -5,18 +5,14 @@ import { TECHSKILLS } from "../../constants";
 import Card from "./Card";
 
 const Container = styled.div`
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 `;
 
-const Row = styled.div``;
-
-const Column = styled.div`
-  display: flex;
-  position: relative;
+const CardsContainer = styled.div`
   height: 50%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: start;
+  display: flex;
+  justify-content: center;
 `;
 const SectionHeader = styled.h3`
   font-family: "Montserrat", sans-serif;
@@ -28,11 +24,9 @@ const SectionHeader = styled.h3`
 const SkillsSection = () => {
   return (
     <Container>
-      <Row className="header">
-        <SectionHeader>SKILLS</SectionHeader>
-      </Row>
+      <SectionHeader>SKILLS</SectionHeader>
 
-      <Column className="card-deck text-center">
+      <CardsContainer className="card-deck text-center">
         {TECHSKILLS.map((skill, index) => {
           return (
             <Card
@@ -43,7 +37,7 @@ const SkillsSection = () => {
             />
           );
         })}
-      </Column>
+      </CardsContainer>
     </Container>
   );
 };

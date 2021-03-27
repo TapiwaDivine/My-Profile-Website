@@ -5,6 +5,7 @@ import { divStyles } from "../../styles";
 import ProfileImage from "./SkillsTop/ProfileImage";
 import SkillsContent from "./SkillsTop/SkillsContent";
 import SkillsSection from "./SkillsMidDiv/SkillsSection";
+import SkillTools from "./SkillsBtmDiv/SkillTools";
 
 const Container = styled.div`
   ${divStyles}
@@ -12,10 +13,9 @@ const Container = styled.div`
 
 const ContentBlock = styled.div`
   display: flex;
-  padding: 0px 10% 3rem;
+  padding: 5% 10% 3rem;
   min-height: 300px;
   position: relative;
-  align-items: center;
   justify-content: start;
   gap: 4rem;
 `;
@@ -40,13 +40,9 @@ function Skills(props) {
         <SkillsContent />
       </ContentBlock>
       <Line />
-      <ContentBlock>
-        <SkillsSection />
-      </ContentBlock>
+      <SkillsSection />
       <Line />
-      <ContentBlock>
-        <SkillsSection />
-      </ContentBlock>
+      <SkillTools />
     </Container>
   );
 }

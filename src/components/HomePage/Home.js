@@ -53,7 +53,7 @@ function Home() {
           </Fragment>
         }
       />
-
+<div>
       <span className="herotext-mobile">
         hi,{"i'm"} <span className="myName">tapiwa,</span>web developer
       </span>
@@ -61,6 +61,7 @@ function Home() {
       <a href="mailto:tchipatikoyahoo.com">
         <Button className="contacting-btn">contact me</Button>
       </a>
+      </div>
     </Container>
   );
 }
