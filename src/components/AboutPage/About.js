@@ -4,7 +4,6 @@ import { v4 as uuid } from "uuid";
 import { useParams } from "react-router-dom";
 
 import { PROFILE_DETAIL, PROFILE_IMAGE } from "../constants";
-import Heading from "../shared/Heading";
 import Paragraph from "../shared/Paragraph";
 import { center, divStyles } from "../../styles";
 
@@ -15,30 +14,40 @@ const Container = styled.div`
   align-items: center;
 `;
 
+const PageHeader = styled.h1`
+  font-size: 3rem;
+  margin-bottom: 1rem;
+`;
+
 const ImageContainer = styled.div`
   ${center};
-  flex-direction: column;
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height: 90%;
+  margin: 0% 5% 0% 5%;
 `;
 
 const ProfileImage = styled.img`
   object-fit: contain;
-  z-index: 0;
-  width: auto;
-  max-height: 40rem;
-  position: relative;
-  bottom: -10px;
+  width: 100%;
+  min-height: 80%;
+  
 `;
 
 const Content = styled.div`
   ${center};
-  width: 50%;
+  height: 80%;
+  width: 40%;
   flex-direction: column;
   padding: 0 7rem;
-  font-size: 1.6rem;
+  position: relative;
+  top: 0%;
+
 `;
 
+const AboutText = styled.p`
+  font-size: 1.5rem;
+  
+`;
 function About(props) {
   const { name } = useParams();
   return (
@@ -47,12 +56,12 @@ function About(props) {
         <ProfileImage src={PROFILE_IMAGE} />
       </ImageContainer>
       <Content>
-        <Heading content="About me" />
-        <div>
+        <PageHeader>About Me</PageHeader>
+        <AboutText>
           {Object.values(PROFILE_DETAIL).map((value) => {
             return <Paragraph key={uuid()} content={value} />;
           })}
-        </div>
+        </AboutText>
       </Content>
       {name}
     </Container>

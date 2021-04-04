@@ -1,18 +1,25 @@
 import React from "react";
-// import "../../Css/Skillspage";
 import styled from "styled-components";
 
 const Container = styled.div`
   width: 50%;
   text-align: left;
   padding-bottom: .5rem;
+  padding-right: 3.5rem
 `;
 
+const SubHeader = styled.h5`
+  font-size: 1.5rem;
+`;
+
+const ContentText = styled.p`
+  font-size: 1.2rem;
+`
 const Content = ({ header, paragraph }) => {
   return (
     <Container className="info-column">
-      <h6 className="sub-header">{header}</h6>
-      <p className="info-top">{paragraph}</p>
+      <SubHeader>{header}</SubHeader>
+      <ContentText>{paragraph}</ContentText>
     </Container>
   );
 };

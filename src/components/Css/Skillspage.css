@@ -1,11 +1,19 @@
 .card {
   max-width: 32rem;
-  height: 26rem;
+  max-height: 34rem;
   padding-bottom: 4rem;
 }
 .card-img-top {
-  max-height: 16rem;
+  max-height: 20rem;
 }
 .card-deck .card {
   padding-bottom: 10rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
 }

@@ -8,6 +8,8 @@ const Container = styled.div`
   border: .3rem solid #f4f4f4;
   padding: 1rem;
   border-radius: .4rem;
+  margin-left: -6rem;
+  margin-bottom: 3rem;
 `;
 
 const InnerContainer = styled.div`
@@ -19,10 +21,14 @@ const InnerContainer = styled.div`
   align-items: start;
 `;
 
+const SectionHeader = styled.h3`
+  font-size: 2rem;
+`;
+
 const SkillsContent = () => {
   return (
     <Container>
-      <h4>Expertise</h4>
+      <SectionHeader>Expertise</SectionHeader>
 
       <InnerContainer>
         {SKILLS.map((skill, index) => {

@@ -11,7 +11,7 @@ const SkillContainer = styled.div`
 
 const SkillImg = styled.img`
   position: relative;
-  height: 10rem;
+  height: 6rem;
   width: 12rem;
   object-fit: contain;
 `;

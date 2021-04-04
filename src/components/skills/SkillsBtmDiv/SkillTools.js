@@ -7,20 +7,19 @@ import SubContainer from "./SubContainer"
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding:7rem;
+  padding: 4rem;
 `;
 const SectionHeader = styled.h3`
-  font-family: "Montserrat", sans-serif;
-  font-size: 4rem;
-  font-weight: bolder;
-  margin: 0 auto 9rem auto;
-  padding: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.3rem;
+  margin: 0 auto 5rem auto;
+  padding: 1rem;
 `;
 
 const SkillsBlock = () => {
   return (
     <Wrapper>
-      <SectionHeader>Programming Languages and Tools Used</SectionHeader>
+      <SectionHeader>Programming Languages & Tools Used</SectionHeader>
       <SubContainer list={FRONTEND_TOOLS} heading="Front End Skills" />
       <SubContainer list={BACKEND_TOOLS} heading="Backend End Skills" />
       <SubContainer list={WEB_DESIGN_TOOLS} heading="Web Designing Skills" />

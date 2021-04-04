@@ -5,18 +5,17 @@ import { TECHSKILLS } from "../../constants";
 import Card from "./Card";
 
 const Container = styled.div`
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin: 2rem 0 6rem 0;
 `;
 
 const CardsContainer = styled.div`
-  height: 50%;
+  height: 34rem;
   display: flex;
   justify-content: center;
+
 `;
 const SectionHeader = styled.h3`
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
+  font-size: 2.3rem;
   padding: 3rem;
   text-align: center;
 `;
@@ -24,7 +23,7 @@ const SectionHeader = styled.h3`
 const SkillsSection = () => {
   return (
     <Container>
-      <SectionHeader>SKILLS</SectionHeader>
+      <SectionHeader>Skills</SectionHeader>
 
       <CardsContainer className="card-deck text-center">
         {TECHSKILLS.map((skill, index) => {

@@ -23,7 +23,7 @@ const Line = styled.hr`
   border: 0;
   height: 1px;
   width: 70%;
-  margin: auto;
+  margin: 2rem auto 2rem auto;
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
