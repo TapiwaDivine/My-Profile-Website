@@ -1,5 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import RecentWork from "./RecentWork";
+
+const Container = styled.div`
+	position: relative;
+`;
 
 const HeroSection = styled.div`
 	height: 50rem;
@@ -22,9 +27,12 @@ const HeroHeader = styled.h1`
 
 const Work = () => {
 	return (
-		<HeroSection className="container-fluid">
-			<HeroHeader>My Work & Projects</HeroHeader>
-		</HeroSection>
+		<Container>
+			<HeroSection className="container-fluid">
+				<HeroHeader>My Work & Projects</HeroHeader>
+			</HeroSection>
+			<RecentWork />
+		</Container>
 	);
 };
 
