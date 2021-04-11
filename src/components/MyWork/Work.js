@@ -16,6 +16,7 @@ const HeroSection = styled.div`
 	background-position: 50% 50%;
 	text-align: center;
 	color: #fff;
+	position: inherit;
 `;
 const HeroHeader = styled.h1`
 	font-family: "Montserrat", sans-serif;
