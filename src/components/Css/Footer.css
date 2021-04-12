@@ -2,35 +2,33 @@
 	background-color: #232121;
 	height: 10rem;
 	width: 100%;
-	margin-top: auto;
-	overflow: hidden;
-	justify-content: center;
-	align-items: center;
 	font-size: 2rem;
 	position: relative;
-	margin-bottom: 0;
+	margin-top: -10rem;
+	bottom: 0;
+	text-align: center;
 }
 
 .fab {
-	position: absolute;
+	position: relative;
 	font-size: 2.5rem;
 	color: #fff;
 	top: 25%;
 }
 
 .fa-linkedin {
-	position: absolute;
-	left: 45%;
+	position: relative;
+	right: -9%;
 }
 
 .fa-github {
-	position: absolute;
-	right: 45%;
+	position: relative;
+	left: -1%;
 }
 
 .copyright {
-	position: absolute;
+	position: relative;
 	color: #fff;
 	font-size: 1rem;
-	bottom: 5%;
+	bottom: -65%;
 }

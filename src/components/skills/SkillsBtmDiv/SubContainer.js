@@ -6,10 +6,12 @@ import Tool from "./Tool";
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto 4rem auto;
-	border: 3rem solid #c4c4c4;
+	margin: 0 auto 10rem auto;
+	box-shadow: 0.5rem 0.5rem 1rem #777;
+	border-radius: 1rem;
 	width: 80%;
 	justify-content: center;
+	padding-top: 2rem;
 `;
 
 const CardsContainer = styled.div`
@@ -21,6 +23,7 @@ const CardsContainer = styled.div`
 	margin-right: 6rem;
 `;
 const SubHeading = styled.h4`
+	padding: 4rem;
 	font-size: 2.1rem;
 	text-decoration: underline;
 	text-align: center;
