@@ -39,16 +39,18 @@ const StyledSpan = styled.span`
 	margin-left: ${(props) => (props.highlighted ? "1rem" : "0")};
 `;
 
-const Button = styled.button`
+const Button = styled.a`
 	${primaryButton}
+	text-decoration: none;
 `;
 
 const Home = () => {
 	const breakAt = [0, 2];
 	return (
 		<Container className="container-fluid">
-			<TextContainer>
+			<TextContainer className="text-container">
 				<Heading
+					className="Hero-text"
 					content={
 						<Fragment>
 							{Object.values(INTRO_TEXT).map((value, index) => {
@@ -62,15 +64,14 @@ const Home = () => {
 						</Fragment>
 					}
 				/>
-				<div>
-					<span className="herotext-mobile">
-						hi,{"i'm"} <span className="myName">tapiwa,</span>web developer
-					</span>
-					<span className="skillHighlight">CSS/Javascript/React/Python</span>
-					<a href="mailto:tchipatikoyahoo.com">
-						<Button className="contacting-btn">contact me</Button>
-					</a>
-				</div>
+
+				<p className="herotext-mobile">
+					hi, im <b className="myName">tapiwa,</b>web developer
+				</p>
+				<span className="skillHighlight">CSS/Javascript/React/Python</span>
+				<Button href="mailto:tchipatikoyahoo.com" className="contacting-btn">
+					contact me
+				</Button>
 			</TextContainer>
 		</Container>
 	);
