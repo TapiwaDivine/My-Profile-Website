@@ -8,7 +8,7 @@
 
 .skillHighlight {
 	position: relative;
-	top: 165%;
+	top: 8%;
 	left: 2%;
 	color: #000000;
 	font-size: 1.5rem;
@@ -19,8 +19,8 @@
 	height: 6rem;
 	position: relative;
 	z-index: 1;
-	top: 12rem;
-	left: -19rem;
+	top: 8rem;
+	left: 0rem;
 	text-decoration: none;
 	text-align: center;
 	text-transform: uppercase;
@@ -83,7 +83,6 @@
 	div .text-container {
 		height: 100%;
 		width: 100%;
-		background-color: #22b246;
 		left: 0;
 		top: 0;
 	}
@@ -121,8 +120,19 @@
 		color: red;
 		padding: 1rem;
 		position: relative;
-		left: 33%;
-		top: 199%;
+		top: 73%;
 		height: 5rem;
+		margin-left: auto;
+		margin-right: auto;
+		height: 5rem;
+	}
+	/**********************footer***************************/
+
+	.copyright {
+		left: -6%;
+	}
+
+	.fa-linkedin {
+		right: -26%;
 	}
 }

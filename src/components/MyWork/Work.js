@@ -2,13 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import RecentWork from "./RecentWork";
 
-const Container = styled.div`
+const WorkDiv = styled.div`
 	position: relative;
 `;
 
 const HeroSection = styled.div`
 	height: 50rem;
-	/* width: 100%; */
 	background: url("https://res.cloudinary.com/deesjttvu/image/upload/v1616860152/coding_easdss.png"),
 		linear-gradient(rgba(47, 104, 157, 0.7), rgba(47, 104, 157, 0.7)), no-repeat;
 	background-blend-mode: overlay;
@@ -28,12 +27,12 @@ const HeroHeader = styled.h1`
 
 const Work = () => {
 	return (
-		<Container>
+		<WorkDiv>
 			<HeroSection className="container-fluid">
 				<HeroHeader>My Work & Projects</HeroHeader>
 			</HeroSection>
 			<RecentWork />
-		</Container>
+		</WorkDiv>
 	);
 };
 
