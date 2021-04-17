@@ -7,62 +7,76 @@ import { PROFILE_DETAIL, PROFILE_IMAGE } from "../constants";
 import Paragraph from "../shared/Paragraph";
 import { center, HeroDivStyles } from "../../styles";
 
-const Container = styled.div`
+const OutterDiv = styled.div`
 	${HeroDivStyles}
-	background-color: #fff;
-	/* align-items: center; */
+	@media screen and (max-width: 1024px) {
+		overflow: scroll;
+		flex-direction: column;
+	}
 `;
 
-const PageHeader = styled.h1`
-	font-size: 3rem;
-	margin-bottom: 1rem;
-`;
-
-const ImageContainer = styled.div`
+const ImageDiv = styled.div`
 	${center};
 	width: 50%;
 	height: 100%;
 	margin: 0;
+	@media screen and (max-width: 1024px) {
+		width: 100vw;
+		height: 60vh;
+	}
 `;
 
-const ProfileImage = styled.img`
+const PageImage = styled.img`
 	object-fit: contain;
 	width: 100%;
-	max-height: 96%;
+	max-height: 98%;
 	position: relative;
 	top: 5vh;
+	@media screen and (max-width: 1024px) {
+		max-height: 90%;
+		top: 1vh;
+	}
 `;
 
-const Content = styled.div`
+const TextDiv = styled.div`
 	${center};
-	height: 80%;
-	width: 40%;
+	height: 100%;
+	width: 50%;
 	flex-direction: column;
 	padding: 0 7rem;
 	position: relative;
-	top: 0%;
+	top: 0;
+	@media screen and (max-width: 1024px) {
+		width: 100vw;
+		height: 100vh;
+		padding: 0 2rem;
+	}
+`;
+const AboutMeHeading = styled.h1`
+	font-size: 3rem;
+	margin-bottom: 1rem;
 `;
 
 const AboutText = styled.p`
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 `;
-function About(props) {
+function About() {
 	const { name } = useParams();
 	return (
-		<Container>
-			<ImageContainer>
-				<ProfileImage src={PROFILE_IMAGE} />
-			</ImageContainer>
-			<Content>
-				<PageHeader>About Me</PageHeader>
+		<OutterDiv>
+			<ImageDiv>
+				<PageImage src={PROFILE_IMAGE} />
+			</ImageDiv>
+			<TextDiv>
+				<AboutMeHeading>About Me</AboutMeHeading>
 				<AboutText>
 					{Object.values(PROFILE_DETAIL).map((value) => {
 						return <Paragraph key={uuid()} content={value} />;
 					})}
 				</AboutText>
-			</Content>
+			</TextDiv>
 			{name}
-		</Container>
+		</OutterDiv>
 	);
 }
 

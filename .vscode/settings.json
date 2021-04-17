@@ -6,13 +6,19 @@
         "Tapiwa",
         "Udemy",
         "corel",
+        "div",
         "errorhandling",
         "fa",
         "figma",
         "herotext",
+        "image",
         "linkedin",
         "photoshop",
         "view",
         "workbtn"
+    ],
+    "cSpell.ignoreWords": [
+        "div",
+        "outter"
     ]
 }
