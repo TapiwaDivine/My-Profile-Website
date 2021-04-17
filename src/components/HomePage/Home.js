@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import "../Css/Homepage.css";
-import Heading from "../shared/Heading";
+import BigHeroText from "./HeroHeading";
 import styled from "styled-components";
 import { INTRO_TEXT } from "../constants";
-import { primaryButton, divStyles } from "../../styles";
+import { primaryButton, HeroDivStyles } from "../../styles";
 
-const Container = styled.div`
-	${divStyles}
+const HeroDiv = styled.div`
+	${HeroDivStyles}
 	background: url("https://res.cloudinary.com/deesjttvu/image/upload/v1606430017/tapiwagrey_uopbz3.png")
     no-repeat;
 	background-color: #92958d;
@@ -16,8 +16,8 @@ const Container = styled.div`
 	position: relative;
 `;
 
-const TextContainer = styled.div`
-	position: relative;
+const PageElementsDiv = styled.div`
+	position: inherit;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -25,38 +25,42 @@ const TextContainer = styled.div`
 	height: 65%;
 	top: 30%;
 	left: 12%;
+	@media screen and (max-width: 1024px) {
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	} ;
 `;
 
-const StyledSpan = styled.span`
+const RedText = styled.span`
 	font-family: "Roboto", sans-serif;
 	text-transform: capitalize;
-	font-weight: 500;
-	font-size: 3.4rem;
-	position: relative;
-	top: 20rem;
-	left: 13rem;
+	position: inherit;
 	color: ${(props) => (props.highlighted ? "#b22222" : "#fff")};
 	margin-left: ${(props) => (props.highlighted ? "1rem" : "0")};
 `;
 
 const Button = styled.a`
 	${primaryButton}
-	text-decoration: none;
+	padding: 1.5rem;
+	@media screen and (max-width: 1024px) {
+		padding: 1rem;
+	} ;
 `;
 
 const Home = () => {
 	const breakAt = [0, 2];
 	return (
-		<Container className="container-fluid">
-			<TextContainer className="text-container">
-				<Heading
-					className="Hero-text"
+		<HeroDiv className="container-fluid">
+			<PageElementsDiv>
+				<BigHeroText
 					content={
 						<Fragment>
 							{Object.values(INTRO_TEXT).map((value, index) => {
 								return (
 									<>
-										<StyledSpan highlighted={index === 2}>{value}</StyledSpan>
+										<RedText highlighted={index === 2}>{value}</RedText>
 										{breakAt.includes(index) && <br />}
 									</>
 								);
@@ -66,14 +70,14 @@ const Home = () => {
 				/>
 
 				<p className="herotext-mobile">
-					hi, im <b className="myName">tapiwa,</b>web developer
+					hi, im <b className="red_text-mobile">tapiwa,</b>web developer
 				</p>
-				<span className="skillHighlight">CSS/Javascript/React/Python</span>
-				<Button href="mailto:tchipatikoyahoo.com" className="contacting-btn">
+				<span className="skills-text">CSS/Javascript/React/Python</span>
+				<Button href="mailto:tchipatikoyahoo.com" className="contact_me-btn">
 					contact me
 				</Button>
-			</TextContainer>
-		</Container>
+			</PageElementsDiv>
+		</HeroDiv>
 	);
 };
 

@@ -6,16 +6,16 @@ const center = css`
 	text-align: center;
 `;
 
-const divStyles = css`
+const HeroDivStyles = css`
 	height: 87vh;
 	width: 100%;
 	position: relative;
-	flex: column;
+	display: flex;
 `;
 
 const primaryButton = css`
 	color: red;
-	padding: 1rem;
+	text-decoration: none;
 `;
 
-export { center, primaryButton, divStyles };
+export { center, primaryButton, HeroDivStyles };

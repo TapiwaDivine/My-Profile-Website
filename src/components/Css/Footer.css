@@ -9,21 +9,25 @@
 	text-align: center;
 }
 
+.footer > a {
+	position: inherit;
+	height: 3rem;
+	width: 3rem;
+}
+
+.linkedin-link {
+	left: 10vw;
+	top: 2vh;
+}
+
+.github-link {
+	left: -2vw;
+	top: 2vh;
+}
+
 .fab {
-	position: relative;
 	font-size: 2.5rem;
 	color: #fff;
-	top: 25%;
-}
-
-.fa-linkedin {
-	position: relative;
-	right: -9%;
-}
-
-.fa-github {
-	position: relative;
-	left: -1%;
 }
 
 .copyright {
@@ -31,4 +35,29 @@
 	color: #fff;
 	font-size: 1rem;
 	bottom: -65%;
+	margin: auto;
+}
+
+/************************************** Home Mobile Styles ***********************/
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+	.linkedin-link {
+		left: 17vw;
+	}
+
+	.github-link {
+		left: -14vw;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.copyright {
+		margin: auto;
+	}
+	.linkedin-link {
+		left: 31vw;
+	}
+
+	.github-link {
+		left: -6vw;
+	}
 }
