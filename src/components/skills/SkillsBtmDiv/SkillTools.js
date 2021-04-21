@@ -11,7 +11,7 @@ import SubContainer from "./SubContainer";
 const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 10rem 4rem 20rem 4rem;
+	padding: 10rem;
 `;
 const SectionHeader = styled.h3`
 	font-family: "Roboto", sans-serif;

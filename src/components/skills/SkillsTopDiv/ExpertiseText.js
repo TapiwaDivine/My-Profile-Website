@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
+const TextDiv = styled.div`
 	width: 50%;
 	text-align: left;
 	padding-bottom: 0.5rem;
@@ -12,16 +12,16 @@ const SubHeader = styled.h5`
 	font-size: 2rem;
 `;
 
-const ContentText = styled.p`
+const ParagraphText = styled.p`
 	font-size: 1.7rem;
 `;
-const Content = ({ header, paragraph }) => {
+const RenderExpertiseText = ({ header, paragraph }) => {
 	return (
-		<Container className="info-column">
+		<TextDiv className="info-column">
 			<SubHeader>{header}</SubHeader>
-			<ContentText>{paragraph}</ContentText>
-		</Container>
+			<ParagraphText>{paragraph}</ParagraphText>
+		</TextDiv>
 	);
 };
 
-export default Content;
+export default RenderExpertiseText;

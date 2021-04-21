@@ -4,9 +4,10 @@ import styled from "styled-components";
 import { TECHSKILLS } from "../../constants";
 import Card from "./Card";
 
-const Container = styled.div`
+const SkillsSectionDiv = styled.div`
 	margin: 2rem 0 6rem 0;
 	height: 80vh;
+	background-color: green;
 `;
 
 const SectionHeader = styled.h3`
@@ -25,7 +26,7 @@ const CardsContainer = styled.div`
 
 const SkillsSection = () => {
 	return (
-		<Container>
+		<SkillsSectionDiv>
 			<SectionHeader>Skills</SectionHeader>
 
 			<CardsContainer className="card-deck text-center">
@@ -40,7 +41,7 @@ const SkillsSection = () => {
 					);
 				})}
 			</CardsContainer>
-		</Container>
+		</SkillsSectionDiv>
 	);
 };
 

@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 import { center } from "../../../styles";
 
-const Container = styled.div`
+const ImgDiv = styled.div`
 	${center};
-	width: 94rem;
-	height: 17rem;
+	width: 102rem;
+	height: 28rem;
 	margin-left: 5rem;
 	position: relative;
 
 	img {
 		width: 100%;
-		height: 162%;
+		height: 100%;
 		object-fit: cover;
 		background-color: #f4f4f4;
 		padding: 0;
@@ -23,12 +23,12 @@ const Container = styled.div`
 
 const ProfileImage = () => {
 	return (
-		<Container>
+		<ImgDiv>
 			<img
 				src="https://res.cloudinary.com/deesjttvu/image/upload/v1617054796/tapiwa_pbgdse.png"
 				alt="profile"
 			/>
-		</Container>
+		</ImgDiv>
 	);
 };
 

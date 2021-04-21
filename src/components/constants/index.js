@@ -21,7 +21,7 @@ export const INTRO_TEXT = {
 	span3: `web developer`,
 };
 
-export const SKILLS = [
+export const EXPERTISE_SECTION_TEXT = [
 	{
 		header: `Software Development`,
 		paragraph: `Solving Algorithms, Creating Full-Stack projects, eager to learn new thing and develop`,
