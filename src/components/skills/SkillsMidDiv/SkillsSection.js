@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 import { TECHSKILLS } from "../../constants";
-import Card from "./Card";
+import SkillsCard from "./SkillsCard";
 
 const SkillsSectionDiv = styled.div`
 	margin: 2rem 0 6rem 0;
 	height: 80vh;
-	background-color: green;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
 `;
 
 const SectionHeader = styled.h3`
@@ -17,11 +21,12 @@ const SectionHeader = styled.h3`
 	text-transform: uppercase;
 `;
 
-const CardsContainer = styled.div`
-	height: 40rem;
-	display: flex;
+const SkillsCardsDiv = styled.div`
+	height: 42rem;
+	width: 80%;
 	justify-content: center;
-	padding-top: 10rem;
+	margin-top: 6rem;
+	padding: 2rem;
 `;
 
 const SkillsSection = () => {
@@ -29,10 +34,10 @@ const SkillsSection = () => {
 		<SkillsSectionDiv>
 			<SectionHeader>Skills</SectionHeader>
 
-			<CardsContainer className="card-deck text-center">
+			<SkillsCardsDiv className="card-deck text-center">
 				{TECHSKILLS.map((skill, index) => {
 					return (
-						<Card
+						<SkillsCard
 							key={index}
 							img={skill.img}
 							title={skill.title}
@@ -40,7 +45,7 @@ const SkillsSection = () => {
 						/>
 					);
 				})}
-			</CardsContainer>
+			</SkillsCardsDiv>
 		</SkillsSectionDiv>
 	);
 };
