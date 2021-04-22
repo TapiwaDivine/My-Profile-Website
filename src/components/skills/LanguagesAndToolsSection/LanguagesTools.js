@@ -6,9 +6,9 @@ import {
 	BACKEND_TOOLS,
 	WEB_DESIGN_TOOLS,
 } from "../../constants";
-import SubContainer from "./SubContainer";
+import LanguagesAndToolsBox from "./LanguagesAndToolsBox";
 
-const Wrapper = styled.div`
+const MainSectionDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding: 10rem;
@@ -21,15 +21,18 @@ const SectionHeader = styled.h3`
 	text-transform: uppercase;
 `;
 
-const SkillsBlock = () => {
+const LanguagesAndToolsSection = () => {
 	return (
-		<Wrapper>
+		<MainSectionDiv>
 			<SectionHeader>Programming Languages & Tools Used</SectionHeader>
-			<SubContainer list={FRONTEND_TOOLS} heading="Front End Skills" />
-			<SubContainer list={BACKEND_TOOLS} heading="Backend End Skills" />
-			<SubContainer list={WEB_DESIGN_TOOLS} heading="Web Designing Skills" />
-		</Wrapper>
+			<LanguagesAndToolsBox list={FRONTEND_TOOLS} heading="Front End Skills" />
+			<LanguagesAndToolsBox list={BACKEND_TOOLS} heading="Backend End Skills" />
+			<LanguagesAndToolsBox
+				list={WEB_DESIGN_TOOLS}
+				heading="Web Designing Skills"
+			/>
+		</MainSectionDiv>
 	);
 };
 
-export default SkillsBlock;
+export default LanguagesAndToolsSection;

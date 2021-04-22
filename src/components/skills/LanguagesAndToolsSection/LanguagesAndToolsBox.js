@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Tool from "./Tool";
 
-const Container = styled.div`
+const ToolsBoxDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto 10rem auto;
@@ -14,7 +14,7 @@ const Container = styled.div`
 	padding-top: 2rem;
 `;
 
-const CardsContainer = styled.div`
+const LanguagesToolsDiv = styled.div`
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -29,18 +29,18 @@ const SubHeading = styled.h4`
 	text-align: center;
 `;
 
-const SubContainer = ({ list, heading }) => {
+const LanguagesAndToolsBox = ({ list, heading }) => {
 	return (
-		<Container>
+		<ToolsBoxDiv>
 			<SubHeading>{heading}</SubHeading>
-			<CardsContainer>
+			<LanguagesToolsDiv>
 				{list.map((tool, index) => {
 					return <Tool key={index} icon={tool.icon} text={tool.name} />;
 				})}
 				;
-			</CardsContainer>
-		</Container>
+			</LanguagesToolsDiv>
+		</ToolsBoxDiv>
 	);
 };
 
-export default SubContainer;
+export default LanguagesAndToolsBox;

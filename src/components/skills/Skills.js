@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-import ProfileImage from "./SkillsTopDiv/ProfileImg";
-import DisplayExpertiseText from "./SkillsTopDiv/ExpertiseSection";
-import SkillsSection from "./SkillsMidDiv/SkillsSection";
-import SkillTools from "./SkillsBtmDiv/SkillTools";
+import ProfileImage from "./ExpertiseSection/ProfileImg";
+import DisplayExpertiseText from "./ExpertiseSection/ExpertiseSection";
+import SkillsSection from "./SkillsSection/SkillsSection";
+import LanguagesAndToolsSection from "./LanguagesAndToolsSection/LanguagesTools";
 
 const SkillsPageMainDiv = styled.div`
 	width: 100vw;
 	height: 100%;
 `;
 
-const TopDiv = styled.div`
+const ExpertiseSectionDiv = styled.div`
 	display: flex;
 	padding: 5% 10%;
 	min-height: 30rem;
@@ -36,14 +36,14 @@ const HrLine = styled.hr`
 function Skills(props) {
 	return (
 		<SkillsPageMainDiv>
-			<TopDiv>
+			<ExpertiseSectionDiv>
 				<ProfileImage />
 				<DisplayExpertiseText />
-			</TopDiv>
+			</ExpertiseSectionDiv>
 			<HrLine />
 			<SkillsSection />
 			<HrLine />
-			<SkillTools />
+			<LanguagesAndToolsSection />
 		</SkillsPageMainDiv>
 	);
 }

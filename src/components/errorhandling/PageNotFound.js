@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { HeroDivStyles } from "../../styles";
 
-const ErrorPageContainer = styled.div`
+const ErrorPageDiv = styled.div`
 	${HeroDivStyles}
 	background-color: #92958d;
 `;
@@ -18,9 +18,9 @@ const ErrorPageText = styled.div`
 
 const PageNotFound = () => {
 	return (
-		<ErrorPageContainer>
+		<ErrorPageDiv>
 			<ErrorPageText> 404. Page not found</ErrorPageText>
-		</ErrorPageContainer>
+		</ErrorPageDiv>
 	);
 };
 
