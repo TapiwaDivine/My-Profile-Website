@@ -11,13 +11,14 @@ const ExpertiseBox = styled.div`
 	height: 30%;
 `;
 
-const TextDiv = styled.div`
+const TextBoxDiv = styled.div`
 	display: flex;
 	position: relative;
 	height: 90%;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: start;
+	padding: 1rem;
 	@media screen and (max-width: 1024px) {
 		flex-direction: column;
 	}
@@ -37,7 +38,7 @@ const DisplayExpertiseText = () => {
 		<ExpertiseBox>
 			<SectionHeader>Expertise</SectionHeader>
 
-			<TextDiv>
+			<TextBoxDiv>
 				{EXPERTISE_SECTION_TEXT.map((skill, index) => {
 					return (
 						<RenderExpertiseText
@@ -47,7 +48,7 @@ const DisplayExpertiseText = () => {
 						/>
 					);
 				})}
-			</TextDiv>
+			</TextBoxDiv>
 		</ExpertiseBox>
 	);
 };

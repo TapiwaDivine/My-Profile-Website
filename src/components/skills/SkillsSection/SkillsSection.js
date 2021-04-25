@@ -11,14 +11,21 @@ const SkillsSectionDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 7rem;
 	position: relative;
+	@media screen and (max-width: 1024px) {
+		margin: 0;
+		height: 100%;
+		padding: 15% 0;
+	}
 `;
 
 const SectionHeader = styled.h3`
 	font-size: 2.6rem;
-	padding-top: 7rem;
 	text-align: center;
 	text-transform: uppercase;
+	@media screen and (max-width: 1024px) {
+	}
 `;
 
 const SkillsCardsDiv = styled.div`
@@ -27,6 +34,10 @@ const SkillsCardsDiv = styled.div`
 	justify-content: center;
 	margin-top: 6rem;
 	padding: 2rem;
+	@media screen and (max-width: 1024px) {
+		height: 100%;
+		width: 100%;
+	}
 `;
 
 const SkillsSection = () => {

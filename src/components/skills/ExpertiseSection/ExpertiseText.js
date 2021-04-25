@@ -3,9 +3,6 @@ import styled from "styled-components";
 
 const TextDiv = styled.div`
 	width: 50%;
-	text-align: left;
-	padding-bottom: 0.5rem;
-	padding-right: 3.5rem;
 	@media screen and (max-width: 1024px) {
 		width: 100%;
 		padding: 0;

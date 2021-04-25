@@ -21,6 +21,7 @@ const ExpertiseSectionDiv = styled.div`
 	@media screen and (max-width: 1024px) {
 		flex-direction: column;
 		max-width: 100vw;
+		padding: 15% 5%;
 	}
 `;
 
@@ -28,13 +29,16 @@ const HrLine = styled.hr`
 	border: 0;
 	height: 1px;
 	width: 70%;
-	margin: 2rem auto 2rem auto;
+	margin: 2rem auto;
 	background-image: linear-gradient(
 		to right,
 		rgba(0, 0, 0, 0),
 		rgba(0, 0, 0, 0.75),
 		rgba(0, 0, 0, 0)
 	);
+	@media screen and (max-width: 1024px) {
+		margin: 0 auto;
+	}
 `;
 
 function Skills(props) {
