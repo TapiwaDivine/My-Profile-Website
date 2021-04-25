@@ -12,6 +12,9 @@ const ToolsBoxDiv = styled.div`
 	width: 80%;
 	justify-content: center;
 	padding-top: 2rem;
+	@media screen and (max-width: 1024px) {
+		width: 90%;
+	}
 `;
 
 const LanguagesToolsDiv = styled.div`
@@ -21,6 +24,11 @@ const LanguagesToolsDiv = styled.div`
 	padding: 2rem;
 	margin-left: 6rem;
 	margin-right: 6rem;
+	@media screen and (max-width: 1024px) {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		padding: 0;
+	}
 `;
 const SubHeading = styled.h4`
 	padding: 4rem;

@@ -12,6 +12,9 @@ const MainSectionDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding: 10rem;
+	@media screen and (max-width: 1024px) {
+		padding: 10% 0;
+	} ;
 `;
 const SectionHeader = styled.h3`
 	font-family: "Roboto", sans-serif;
@@ -19,6 +22,10 @@ const SectionHeader = styled.h3`
 	margin: 0 auto 5rem auto;
 	padding: 1rem;
 	text-transform: uppercase;
+	@media screen and (max-width: 1024px) {
+		padding: 5%;
+		text-align: center;
+	} ;
 `;
 
 const LanguagesAndToolsSection = () => {
