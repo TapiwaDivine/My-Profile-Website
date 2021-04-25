@@ -18,6 +18,10 @@ const ExpertiseSectionDiv = styled.div`
 	position: relative;
 	justify-content: start;
 	gap: 1rem;
+	@media screen and (max-width: 1024px) {
+		flex-direction: column;
+		max-width: 100vw;
+	}
 `;
 
 const HrLine = styled.hr`

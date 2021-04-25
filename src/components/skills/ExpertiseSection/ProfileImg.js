@@ -6,7 +6,7 @@ import { center } from "../../../styles";
 const ImgDiv = styled.div`
 	${center};
 	width: 102rem;
-	height: 28rem;
+	height: 27.4rem;
 	margin-left: 5rem;
 	position: relative;
 
@@ -15,9 +15,14 @@ const ImgDiv = styled.div`
 		height: 100%;
 		object-fit: cover;
 		background-color: #f4f4f4;
-		padding: 0;
-		margin: 0;
 		position: relative;
+	}
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+		margin-left: 0;
+		img {
+			object-fit: contain;
+		}
 	}
 `;
 
