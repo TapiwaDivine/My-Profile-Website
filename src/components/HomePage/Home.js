@@ -1,9 +1,8 @@
 import React, { Fragment } from "react";
-import "../Css/Homepage.css";
-import BigHeroText from "./HeroHeading";
+import HeroText from "./HeroHeading";
 import styled from "styled-components";
 import { INTRO_TEXT } from "../constants";
-import { primaryButton, HeroDivStyles } from "../../styles";
+import { RedButton, HeroDivStyles } from "../../styles";
 
 const HeroDiv = styled.div`
 	${HeroDivStyles}
@@ -14,9 +13,18 @@ const HeroDiv = styled.div`
 	background-size: contain;
 	box-shadow: inset 0.5rem 0rem 10rem 4rem #232321;
 	position: relative;
+	@media screen and (max-width: 1024px) {
+		height: 73vh;
+		width: 100%;
+		flex: column;
+		background-color: #92958d;
+		background-position: 50% 100%;
+		background-size: cover;
+		box-shadow: inset 0.5rem 0rem 5rem 1rem #232321;
+	}
 `;
 
-const PageElementsDiv = styled.div`
+const TextBtnDiv = styled.div`
 	position: inherit;
 	display: flex;
 	flex-direction: column;
@@ -41,20 +49,54 @@ const RedText = styled.span`
 	margin-left: ${(props) => (props.highlighted ? "1rem" : "0")};
 `;
 
-const Button = styled.a`
-	${primaryButton}
-	padding: 1.5rem;
+const MobileIntroText = styled.p`
+	display: none;
+	@media screens and (max-width: 1024) {
+		text-decoration: none;
+		text-transform: capitalize;
+		color: #fff;
+		font-family: "Roboto", sans-serif;
+		font-weight: 300;
+		position: relative;
+		text-transform: capitalize;
+		top: 52vh;
+		left: 0%;
+		font-size: 3.3vh;
+		display: block;
+		text-align: center;
+	}
+`;
+
+const NameInRed = styled.b`
+	font-weight: bold;
+	color: #b22222;
+`;
+
+const SkillsInsightText = styled.span`
+	position: relative;
+	top: 8%;
+	color: #000000;
+	font-size: 1.5rem;
+
 	@media screen and (max-width: 1024px) {
-		padding: 1rem;
-	} ;
+		.skills-text {
+			top: 51vh;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 2.1vh;
+			font-weight: 400;
+			color: #fff;
+			position: relative;
+		}
+	}
 `;
 
 const Home = () => {
 	const breakAt = [0, 2];
 	return (
 		<HeroDiv className="container-fluid">
-			<PageElementsDiv>
-				<BigHeroText
+			<TextBtnDiv>
+				<HeroText
 					content={
 						<Fragment>
 							{Object.values(INTRO_TEXT).map((value, index) => {
@@ -69,14 +111,12 @@ const Home = () => {
 					}
 				/>
 
-				<p className="herotext-mobile">
-					hi, im <b className="red_text-mobile">tapiwa,</b>web developer
-				</p>
-				<span className="skills-text">CSS/Javascript/React/Python</span>
-				<Button href="mailto:tchipatikoyahoo.com" className="contact_me-btn">
-					contact me
-				</Button>
-			</PageElementsDiv>
+				<MobileIntroText>
+					hi, im <NameInRed>tapiwa,</NameInRed>web developer
+				</MobileIntroText>
+				<SkillsInsightText>CSS/Javascript/React/Python</SkillsInsightText>
+				<RedButton href="mailto:tchipatikoyahoo.com">contact me</RedButton>
+			</TextBtnDiv>
 		</HeroDiv>
 	);
 };

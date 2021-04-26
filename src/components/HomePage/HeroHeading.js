@@ -12,8 +12,8 @@ const StyledH1 = styled.h1`
 	} ;
 `;
 
-const BigHeroText = ({ content }) => {
+const HeroText = ({ content }) => {
 	return <StyledH1>{content}</StyledH1>;
 };
 
-export default BigHeroText;
+export default HeroText;

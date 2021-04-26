@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import UILink from "../shared/UILink";
-import "../Css/MyWork.css";
 
 const DisplayBox = styled.div`
 	height: 35rem;
@@ -35,7 +34,7 @@ const WorkDisplayBox = ({ recentWorkItem }) => {
 		<DisplayBox bgImage={picture} gradient={gradient}>
 			<BoxHeading>{heading}</BoxHeading>
 			<BoxText>{text}</BoxText>
-			<UILink className="view_workbtn" link={web} linkText="View Project" />
+			<UILink link={web} linkText="View Project" />
 		</DisplayBox>
 	);
 };
