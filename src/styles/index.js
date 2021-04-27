@@ -35,7 +35,7 @@ const RedButton = css`
 		outline: none;
 		overflow: hidden;
 		transition: ease-out 0.3s;
-		padding: 2rem;
+		padding: 1.5rem;
 	}
 	&:hover {
 		text-decoration: none;

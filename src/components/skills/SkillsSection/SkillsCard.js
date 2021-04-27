@@ -5,10 +5,11 @@ const CardDiv = styled.div`
 	max-width: 37rem;
 	max-height: 39rem;
 	padding-bottom: 4rem;
+	box-shadow: 5px 5px 10px #777;
 `;
 
 const CardImg = styled.img`
-	max-height: 20rem;
+	height: 20rem;
 `;
 
 const CardHeading = styled.h5`

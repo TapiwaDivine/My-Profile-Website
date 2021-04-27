@@ -35,7 +35,6 @@ const SkillsCardsDiv = styled.div`
 	margin-top: 6rem;
 	padding: 2rem;
 	padding-bottom: 10rem;
-	box-shadow: 5px 5px 10px #777;
 	@media screen and (max-width: 1024px) {
 		height: 100%;
 		width: 100%;

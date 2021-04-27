@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import HeroText from "./HeroHeading";
 import styled from "styled-components";
-import { INTRO_TEXT } from "../constants";
+import { INTRO_TEXT } from "../../constants";
 import { RedButton, HeroDivStyles } from "../../styles";
 
 const HeroDiv = styled.div`
@@ -90,6 +90,9 @@ const SkillsInsightText = styled.span`
 		}
 	}
 `;
+const ContactMeButton = styled.a`
+	${RedButton}
+`;
 
 const Home = () => {
 	const breakAt = [0, 2];
@@ -114,8 +117,12 @@ const Home = () => {
 				<MobileIntroText>
 					hi, im <NameInRed>tapiwa,</NameInRed>web developer
 				</MobileIntroText>
+
 				<SkillsInsightText>CSS/Javascript/React/Python</SkillsInsightText>
-				<RedButton href="mailto:tchipatikoyahoo.com">contact me</RedButton>
+
+				<ContactMeButton href="mailto:tchipatikoyahoo.com">
+					contact me
+				</ContactMeButton>
 			</TextBtnDiv>
 		</HeroDiv>
 	);
