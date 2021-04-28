@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { EXPERTISE_SECTION_TEXT } from "../../constants";
+import { EXPERTISE_SECTION_TEXT } from "../../../constants";
 import RenderExpertiseText from "./ExpertiseText";
 
 const ExpertiseBox = styled.div`

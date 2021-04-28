@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { v4 as uuid } from "uuid";
 import { useParams } from "react-router-dom";
 
-import { PROFILE_DETAIL, PROFILE_IMAGE } from "../constants";
+import { PROFILE_DETAIL, PROFILE_IMAGE } from "../../constants";
 import Paragraph from "../shared/Paragraph";
 import { center, HeroDivStyles } from "../../styles";
 

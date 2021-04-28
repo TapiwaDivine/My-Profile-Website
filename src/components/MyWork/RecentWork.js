@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { RECENT_WORK_LIST } from "../constants";
+import { RECENT_WORK_LIST } from "../../constants";
 import UILink from "../shared/UILink";
 import WorkDisplayBox from "./WorkDisplayBox";
 

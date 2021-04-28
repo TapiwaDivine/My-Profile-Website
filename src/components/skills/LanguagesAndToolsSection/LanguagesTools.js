@@ -5,7 +5,7 @@ import {
 	FRONTEND_TOOLS,
 	BACKEND_TOOLS,
 	WEB_DESIGN_TOOLS,
-} from "../../constants";
+} from "../../../constants";
 import LanguagesAndToolsBox from "./LanguagesAndToolsBox";
 
 const MainSectionDiv = styled.div`

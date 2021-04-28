@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { TECHSKILLS } from "../../constants";
+import { TECHSKILLS } from "../../../constants";
 import SkillsCard from "./SkillsCard";
 
 const SkillsSectionDiv = styled.div`

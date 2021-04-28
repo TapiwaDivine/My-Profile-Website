@@ -24,7 +24,7 @@ const HeroDiv = styled.div`
 	}
 `;
 
-const TextBtnDiv = styled.div`
+const TextAndButtonDiv = styled.div`
 	position: inherit;
 	display: flex;
 	flex-direction: column;
@@ -34,10 +34,9 @@ const TextBtnDiv = styled.div`
 	top: 30%;
 	left: 12%;
 	@media screen and (max-width: 1024px) {
-		height: 100%;
 		width: 100%;
 		left: 0;
-		top: 0;
+		top: 35%;
 	} ;
 `;
 
@@ -51,18 +50,17 @@ const RedText = styled.span`
 
 const MobileIntroText = styled.p`
 	display: none;
-	@media screens and (max-width: 1024) {
-		text-decoration: none;
+	@media screen and (max-width: 1024px) {
+		display: block;
 		text-transform: capitalize;
 		color: #fff;
 		font-family: "Roboto", sans-serif;
 		font-weight: 300;
 		position: relative;
 		text-transform: capitalize;
-		top: 52vh;
+		top: 54%;
 		left: 0%;
 		font-size: 3.3vh;
-		display: block;
 		text-align: center;
 	}
 `;
@@ -79,15 +77,13 @@ const SkillsInsightText = styled.span`
 	font-size: 1.5rem;
 
 	@media screen and (max-width: 1024px) {
-		.skills-text {
-			top: 51vh;
-			margin-left: auto;
-			margin-right: auto;
-			font-size: 2.1vh;
-			font-weight: 400;
-			color: #fff;
-			position: relative;
-		}
+		top: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 2.1vh;
+		font-weight: 400;
+		color: #fff;
+		position: relative;
 	}
 `;
 const ContactMeButton = styled.a`
@@ -98,7 +94,7 @@ const Home = () => {
 	const breakAt = [0, 2];
 	return (
 		<HeroDiv className="container-fluid">
-			<TextBtnDiv>
+			<TextAndButtonDiv>
 				<HeroText
 					content={
 						<Fragment>
@@ -123,7 +119,7 @@ const Home = () => {
 				<ContactMeButton href="mailto:tchipatikoyahoo.com">
 					contact me
 				</ContactMeButton>
-			</TextBtnDiv>
+			</TextAndButtonDiv>
 		</HeroDiv>
 	);
 };

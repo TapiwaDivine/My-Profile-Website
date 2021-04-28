@@ -62,12 +62,11 @@ const RedButton = css`
 	}
 
 	@media screen and (max-width: 1024px) {
-		padding: 1rem;
-		top: 52vh;
+		top: 55%;
 		height: 5rem;
+		padding: 1rem;
 		margin-left: auto;
 		margin-right: auto;
-		height: 5rem;
 	} ;
 `;
 
