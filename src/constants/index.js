@@ -1,3 +1,21 @@
+export const MENU_ITEMS = [
+	{
+		title: "about me",
+		url: "About",
+		cName: "nav-links",
+	},
+	{
+		title: "skills",
+		url: "Skills",
+		cName: "nav-links",
+	},
+	{
+		title: "my work",
+		url: "MyWork",
+		cName: "nav-links",
+	},
+];
+
 export const PROFILE_IMAGE =
 	"https://res.cloudinary.com/deesjttvu/image/upload/v1610168802/tapiblue_qgyjrv.png";
 

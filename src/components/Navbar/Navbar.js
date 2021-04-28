@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { MenuItems } from "./MenuItems";
+import { MENU_ITEMS } from "../../constants";
 import { Link } from "react-router-dom";
+
 import "../Css/Navbar.css";
 
 const navStyle = {
@@ -32,7 +33,7 @@ class Navbar extends Component {
 
 				<ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
 					{/* looping through MenuItems and displaying them with LI tag */}
-					{MenuItems.map((item, index) => {
+					{MENU_ITEMS.map((item, index) => {
 						return (
 							<Link style={navStyle} to={item.url}>
 								<li className={item.cName} key={index}>
