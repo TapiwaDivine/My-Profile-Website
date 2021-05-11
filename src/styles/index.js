@@ -7,7 +7,7 @@ const center = css`
 	text-align: center;
 `;
 
-const HeroDivStyles = css`
+const FullScreenDivStyles = css`
 	height: 87vh;
 	width: 100%;
 	position: relative;
@@ -71,4 +71,4 @@ const RedButton = css`
 	} ;
 `;
 
-export { center, RedButton, HeroDivStyles };
+export { center, RedButton, FullScreenDivStyles };

@@ -5,60 +5,40 @@ import { useParams } from "react-router-dom";
 
 import { PROFILE_DETAIL, PROFILE_IMAGE } from "../../constants";
 import Paragraph from "../shared/Paragraph";
-import { center, HeroDivStyles } from "../../styles";
+import { center, FullScreenDivStyles } from "../../styles/index";
+import {
+	OutterDivMobileStyles,
+	ImageDivStyles,
+	PageImagesStyles,
+	TextDivStyles,
+	AboutMeHeadingStyles,
+	AboutTextStyles,
+} from "../../styles/AboutStyles";
 
 const OutterDiv = styled.div`
-	${HeroDivStyles}
-	@media screen and (max-width: 1024px) {
-		overflow: scroll;
-		flex-direction: column;
-	}
+	${FullScreenDivStyles}
+	${OutterDivMobileStyles}
 `;
 
 const ImageDiv = styled.div`
 	${center};
-	width: 50%;
-	height: 100%;
-	margin: 0;
-	@media screen and (max-width: 1024px) {
-		width: 100vw;
-		height: 60vh;
-	}
+	${ImageDivStyles}
 `;
 
 const PageImage = styled.img`
-	object-fit: contain;
-	width: 100%;
-	max-height: 98%;
-	position: relative;
-	top: 5vh;
-	@media screen and (max-width: 1024px) {
-		max-height: 90%;
-		top: 1vh;
-	}
+	${PageImagesStyles}
 `;
 
 const TextDiv = styled.div`
 	${center};
-	height: 100%;
-	width: 50%;
-	flex-direction: column;
-	padding: 0 7rem;
-	position: relative;
-	top: 0;
-	@media screen and (max-width: 1024px) {
-		width: 100vw;
-		height: 100vh;
-		padding: 0 2rem;
-	}
+	${TextDivStyles}
 `;
 const AboutMeHeading = styled.h1`
-	font-size: 3rem;
-	margin-bottom: 1rem;
+	${AboutMeHeadingStyles}
 `;
 
 const AboutText = styled.p`
-	font-size: 1.8rem;
+	${AboutTextStyles}
 `;
 function About() {
 	const { name } = useParams();

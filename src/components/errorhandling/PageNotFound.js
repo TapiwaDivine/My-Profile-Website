@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { HeroDivStyles } from "../../styles";
+import { FullScreenDivStyles } from "../../styles";
 
 const ErrorPageDiv = styled.div`
-	${HeroDivStyles}
+	${FullScreenDivStyles}
 	background-color: #92958d;
 `;
 

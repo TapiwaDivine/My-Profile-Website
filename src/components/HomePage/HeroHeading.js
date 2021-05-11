@@ -1,15 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+import { HomeH1Styles } from "../../styles/HomeStyles";
+
 const StyledH1 = styled.h1`
-	font-family: "Roboto", san-serif;
-	font-size: 5rem;
-	position: inherit;
-	top: 4rem;
-	margin: 0;
-	@media screen and (max-width: 1024px) {
-		display: none;
-	} ;
+	${HomeH1Styles}
 `;
 
 const HeroText = ({ content }) => {
