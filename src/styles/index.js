@@ -1,5 +1,6 @@
 import { css } from "styled-components";
 
+//////////////////////////////////////////////      UNIVERSAL STYLES
 const center = css`
 	display: flex;
 	justify-content: center;
