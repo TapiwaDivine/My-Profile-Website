@@ -1,23 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 
+import {
+	CardDivStyles,
+	CardImgStyles,
+	CardHeadingStyles,
+	CardTextStyles,
+} from "../../../styles/SkillsPageStyles";
+
 const CardDiv = styled.div`
-	max-width: 37rem;
-	max-height: 39rem;
-	padding-bottom: 4rem;
-	box-shadow: 5px 5px 10px #777;
+	${CardDivStyles}
 `;
 
 const CardImg = styled.img`
-	height: 20rem;
+	${CardImgStyles}
 `;
 
 const CardHeading = styled.h5`
-	font-size: 2rem;
+	${CardHeadingStyles}
 `;
 
 const CardText = styled.p`
-	font-size: 1.7rem;
+	${CardTextStyles}
 `;
 
 const SkillsCard = ({ img, title, text }) => {

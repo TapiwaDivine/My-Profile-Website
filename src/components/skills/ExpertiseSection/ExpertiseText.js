@@ -1,28 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
+import {
+	TextDivStyles,
+	SubHeaderStyles,
+	ParagraphTextStyles,
+} from "../../../styles/SkillsPageStyles";
+
 const TextDiv = styled.div`
-	width: 50%;
-	@media screen and (max-width: 1024px) {
-		width: 100%;
-		padding: 0;
-	}
+	${TextDivStyles}
 `;
 
 const SubHeader = styled.h5`
-	font-size: 2rem;
-	@media screen and (max-width: 1024px) {
-		text-align: center;
-		padding-bottom: 1rem;
-	}
+	${SubHeaderStyles}
 `;
 
 const ParagraphText = styled.p`
-	font-size: 1.7rem;
-	@media screen and (max-width: 1024px) {
-		text-align: center;
-	}
+	${ParagraphTextStyles}
 `;
+
 const RenderExpertiseText = ({ header, paragraph }) => {
 	return (
 		<TextDiv>

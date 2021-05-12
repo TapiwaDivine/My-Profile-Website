@@ -2,39 +2,21 @@ import React from "react";
 import styled from "styled-components";
 
 import Tool from "./Tool";
+import {
+	ToolsBoxDivStyles,
+	LanguagesToolsDivStyles,
+	LangNToolsSubHeadingStyles,
+} from "../../../styles/SkillsPageStyles";
 
 const ToolsBoxDiv = styled.div`
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto 10rem auto;
-	box-shadow: 0.5rem 0.5rem 1rem #777;
-	border-radius: 1rem;
-	width: 80%;
-	justify-content: center;
-	padding-top: 2rem;
-	@media screen and (max-width: 1024px) {
-		width: 90%;
-	}
+	${ToolsBoxDivStyles}
 `;
 
 const LanguagesToolsDiv = styled.div`
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	padding: 2rem;
-	margin-left: 6rem;
-	margin-right: 6rem;
-	@media screen and (max-width: 1024px) {
-		margin-left: 1rem;
-		margin-right: 1rem;
-		padding: 0;
-	}
+	${LanguagesToolsDivStyles}
 `;
 const SubHeading = styled.h4`
-	padding: 4rem;
-	font-size: 2.1rem;
-	text-decoration: underline;
-	text-align: center;
+	${LangNToolsSubHeadingStyles}
 `;
 
 const LanguagesAndToolsBox = ({ list, heading }) => {

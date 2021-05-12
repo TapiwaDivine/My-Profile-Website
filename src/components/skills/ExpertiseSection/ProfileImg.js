@@ -2,28 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 import { center } from "../../../styles";
+import { ImgDivStyles } from "../../../styles/SkillsPageStyles";
 
 const ImgDiv = styled.div`
 	${center};
-	width: 102rem;
-	height: 27.4rem;
-	margin-left: 5rem;
-	position: relative;
-
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		background-color: #f4f4f4;
-		position: relative;
-	}
-	@media screen and (max-width: 1024px) {
-		width: 100%;
-		margin-left: 0;
-		img {
-			object-fit: contain;
-		}
-	}
+	${ImgDivStyles}
 `;
 
 const ProfileImage = () => {

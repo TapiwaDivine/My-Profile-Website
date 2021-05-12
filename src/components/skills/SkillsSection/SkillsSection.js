@@ -3,42 +3,22 @@ import styled from "styled-components";
 
 import { TECHSKILLS } from "../../../constants";
 import SkillsCard from "./SkillsCard";
+import {
+	SkillsSectionDivStyles,
+	SkillsSectionHeaderStyles,
+	SkillsCardsDivStyles,
+} from "../../../styles/SkillsPageStyles";
 
 const SkillsSectionDiv = styled.div`
-	margin: 2rem 0 6rem 0;
-	height: 80vh;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 7rem;
-	position: relative;
-	@media screen and (max-width: 1024px) {
-		margin: 0;
-		height: 100%;
-		padding: 15% 0;
-	}
+	${SkillsSectionDivStyles}
 `;
 
 const SectionHeader = styled.h3`
-	font-size: 2.6rem;
-	text-align: center;
-	text-transform: uppercase;
-	@media screen and (max-width: 1024px) {
-	}
+	${SkillsSectionHeaderStyles}
 `;
 
 const SkillsCardsDiv = styled.div`
-	height: 42rem;
-	width: 80%;
-	justify-content: center;
-	margin-top: 6rem;
-	padding: 2rem;
-	padding-bottom: 10rem;
-	@media screen and (max-width: 1024px) {
-		height: 100%;
-		width: 100%;
-	}
+	${SkillsCardsDivStyles}
 `;
 
 const SkillsSection = () => {
