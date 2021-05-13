@@ -1,28 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+
 import RecentWork from "./RecentWork";
+import {
+	Work_Div_Styles,
+	Hero_Section_Styles,
+	Hero_Header_Styles,
+} from "../../styles/WorkStyles";
 
 const WorkDiv = styled.div`
-	position: relative;
+	${Work_Div_Styles}
 `;
 
 const HeroSection = styled.div`
-	height: 50rem;
-	background: url("https://res.cloudinary.com/deesjttvu/image/upload/v1616860152/coding_easdss.png"),
-		linear-gradient(rgba(47, 104, 157, 0.7), rgba(47, 104, 157, 0.7)), no-repeat;
-	background-blend-mode: overlay;
-	background-size: cover;
-	background-position: 50% 50%;
-	text-align: center;
-	color: #fff;
-	position: inherit;
+	${Hero_Section_Styles}
 `;
 const HeroHeader = styled.h1`
-	font-family: "Montserrat", sans-serif;
-	font-weight: 900;
-	font-size: 6.4rem;
-	padding-top: 18rem;
-	text-transform: uppercase;
+	${Hero_Header_Styles}
 `;
 
 const Work = () => {

@@ -1,35 +1,30 @@
 import React from "react";
 import styled from "styled-components";
+
 import { RECENT_WORK_LIST } from "../../constants";
 import UILink from "../shared/UILink";
 import WorkDisplayBox from "./WorkDisplayBox";
+import {
+	Recent_Work_Section_Container_Styles,
+	Recent_Work_Boxes_Container_Styles,
+	Recent_Work_SectionHeading_Styles,
+	Recent_Work_SectionText_Styles,
+} from "../../styles/WorkStyles";
 
 const SectionContainer = styled.div`
-	position: relative;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	${Recent_Work_Section_Container_Styles}
 `;
 
 const BoxesContainer = styled.div`
-	position: inherit;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-top: 4rem;
+	${Recent_Work_Boxes_Container_Styles}
 `;
 
 const SectionHeading = styled.h1`
-	text-align: center;
-	font-size: 4rem;
-	padding-top: 6rem;
-	padding-bottom: 4rem;
+	${Recent_Work_SectionHeading_Styles}
 `;
 
 const SectionText = styled.h4`
-	text-align: center;
-	font-size: 2.5rem;
-	padding-bottom: 3rem;
+	${Recent_Work_SectionText_Styles}
 `;
 
 const RecentWork = () => {

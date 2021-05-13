@@ -1,30 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+
 import UILink from "../shared/UILink";
+import {
+	Display_Box_Styles,
+	Box_Heading_Styles,
+	Box_Text_Styles,
+} from "../../styles/WorkStyles";
 
 const DisplayBox = styled.div`
-	height: 35rem;
-	width: 50rem;
-	background: url("${(props) => props.bgImage}"),
-		linear-gradient(${(props) => props.gradient}), no-repeat;
-	background-blend-mode: overlay;
-	background-size: cover;
-	background-position: 50% 50%;
-	text-align: center;
-	color: #fff;
-	margin: 1rem;
-	border-radius: 8px;
-	padding: 5rem;
+	${Display_Box_Styles}
 `;
 
 const BoxHeading = styled.h4`
-	padding-top: 3rem;
-	font-size: 3rem;
+	${Box_Heading_Styles}
 `;
 
 const BoxText = styled.p`
-	padding-top: 2rem;
-	font-size: 2.3rem;
+	${Box_Text_Styles}
 `;
 
 const WorkDisplayBox = ({ recentWorkItem }) => {
