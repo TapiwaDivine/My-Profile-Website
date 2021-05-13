@@ -29,11 +29,8 @@ const LinkedInLinkStyles = css`
 	top: 2vh;
 	color: #fff;
 
-	@media screen and (max-width: 1024px) and (min-width: 480px) {
+	@media screen and (max-width: 1024px) {
 		left: 17vw;
-	}
-	@media screen and (max-width: 479px) {
-		left: 31vw;
 	}
 `;
 
@@ -44,11 +41,8 @@ const GithubLinkStyles = css`
 	left: -10vw;
 	top: 2vh;
 	color: #fff;
-	@media screen and (max-width: 1024px) and (min-width: 480px) {
-		left: 0vw;
-	}
-	@media screen and (max-width: 479px) {
-		left: 0vw;
+	@media screen and (max-width: 1024px) {
+		left: -17vw;
 	}
 `;
 
