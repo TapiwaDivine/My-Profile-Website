@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { IconContext } from "react-icons";
 import { FaTimes, FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 import {
@@ -15,6 +15,11 @@ import { MENU_ITEMS } from "../../constants";
 
 const removeTextUnderline = {
 	textDecoration: "none",
+	color: "#e5e5e5",
+};
+
+const current = {
+	color: "red",
 };
 
 const Nav = styled.nav`
@@ -39,22 +44,13 @@ const MobileMenuIcon = styled.div`
 
 class Navbar extends Component {
 	/* state to manage state of mobile menu icon  */
-	state = { clicked: false, activeIndex: 0, menuOpen: false };
+	state = { clicked: false, menuOpen: false };
 
 	/* function to handle the clicks on mobile menu icon   */
 	handleClick = () => {
 		this.setState((prevState) => ({
 			...prevState,
 			clicked: !this.state.clicked,
-		}));
-	};
-
-	/* function to handle the clicks on mobile menu icon   */
-	handleListItemClick = (ev) => {
-		this.setState((prevState) => ({
-			...prevState,
-			activeIndex: parseInt(ev.target.id, 10),
-			menuOpen: !prevState.menuOpen,
 		}));
 	};
 
@@ -66,13 +62,13 @@ class Navbar extends Component {
 	};
 
 	render() {
-		const { activeIndex, menuOpen } = this.state;
+		const { menuOpen } = this.state;
 		console.log(menuOpen);
 		return (
 			<Nav>
-				<Link style={removeTextUnderline} to="/">
+				<NavLink style={removeTextUnderline} to="/">
 					<Logo>tapiwa</Logo>
-				</Link>
+				</NavLink>
 
 				{/* MOBILE MENU ICON SECTION */}
 				<MobileMenuIcon onClick={this.handleClick}>
@@ -91,17 +87,13 @@ class Navbar extends Component {
 					{/* looping through MenuItems and displaying them with LI tag */}
 					{MENU_ITEMS.map((item, index) => {
 						return (
-							<Link style={removeTextUnderline} to={item.url}>
-								<NavListItem
-									id={index}
-									onClick={this.handleListItemClick}
-									active={activeIndex === index}
-									className={item.cName}
-									key={index}
-								>
-									{item.title}
-								</NavListItem>
-							</Link>
+							<NavLink
+								activeStyle={current}
+								style={removeTextUnderline}
+								to={item.url}
+							>
+								<NavListItem key={index}>{item.title}</NavListItem>
+							</NavLink>
 						);
 					})}
 				</NavigationList>
@@ -109,5 +101,6 @@ class Navbar extends Component {
 		);
 	}
 }
+console.log(Navbar);
 
 export default Navbar;

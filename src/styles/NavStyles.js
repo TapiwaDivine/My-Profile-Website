@@ -17,16 +17,20 @@ const NavbarStyles = css`
 //////////////////////////////////////////////////   LI NAV-LIST STYLES
 
 const NavListItemStyles = css`
-	color: ${(props) => (props.active ? "red" : "#e5e5e5")}!important;
-	text-decoration: none;
+	text-decoration: "none";
+	color: "#e5e5e5";
 	text-transform: capitalize;
 	padding: 1.3rem 1.3rem;
 
 	&:hover {
 		background-color: #e5e5e5;
-		color: #000 !important;
+		color: #000;
 		border-radius: 4px;
 		transition: all 0.2s ease-out;
+	}
+
+	a.selected {
+		color: red !important;
 	}
 `;
 
@@ -73,7 +77,6 @@ const LogoStyles = css`
 	font-weight: 700;
 	font-size: 6rem;
 	text-transform: capitalize;
-	color: #fff;
 	justify-self: start;
 	margin-left: 2rem;
 	cursor: pointer;
