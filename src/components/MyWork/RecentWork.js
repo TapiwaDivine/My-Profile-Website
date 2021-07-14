@@ -27,13 +27,17 @@ const SectionText = styled.h4`
 	${Recent_Work_SectionText_Styles}
 `;
 
+const EmailLink = styled.a`
+	margin-left: 1rem;
+`;
+
 const RecentWork = () => {
 	return (
 		<SectionContainer>
 			<SectionHeading>My Recent Work</SectionHeading>
 			<SectionText>
 				Here is a view to some of my recent project. Want more?
-				<UILink link="mailto:tchipatikoyahoo.com" linkText="Email me" />
+				<EmailLink href="mailto:tchipatikoyahoo.com">Email Me</EmailLink>
 			</SectionText>
 			<BoxesContainer className="container-fluid">
 				{RECENT_WORK_LIST.map((item, index) => (

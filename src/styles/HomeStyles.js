@@ -94,6 +94,18 @@ const HomeH1Styles = css`
 	} ;
 `;
 
+const RedButtonStyles = css`
+	& {
+		color: #b22222;
+		border-color: #b22222;
+		top: 8rem;
+		left: 0rem;
+	}
+	&:before {
+		background-color: #b22222;
+	}
+`;
+
 export {
 	HeroDivStyles,
 	TextAndButtonDivStyles,
@@ -102,4 +114,5 @@ export {
 	NameInRedStyles,
 	SkillsInsightTextStyles,
 	HomeH1Styles,
+	RedButtonStyles,
 };

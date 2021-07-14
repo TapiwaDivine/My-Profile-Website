@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FullScreenDivStyles } from "../../styles";
+import { FullScreenDivStyles } from "../../styles/UniversalStyles";
 
 const ErrorPageDiv = styled.div`
 	${FullScreenDivStyles}

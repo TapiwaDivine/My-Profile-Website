@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { center } from "../../../styles";
+import { center } from "../../../styles/UniversalStyles";
 import { ImgDivStyles } from "../../../styles/SkillsPageStyles";
 
 const ImgDiv = styled.div`

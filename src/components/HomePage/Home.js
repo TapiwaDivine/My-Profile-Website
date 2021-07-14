@@ -2,7 +2,10 @@ import React, { Fragment } from "react";
 import HeroText from "./HeroHeading";
 import styled from "styled-components";
 import { INTRO_TEXT } from "../../constants";
-import { RedButton, FullScreenDivStyles } from "../../styles";
+import {
+	StyledButton,
+	FullScreenDivStyles,
+} from "../../styles/UniversalStyles";
 import {
 	HeroDivStyles,
 	TextAndButtonDivStyles,
@@ -10,6 +13,7 @@ import {
 	MobileIntroTextStyles,
 	NameInRedStyles,
 	SkillsInsightTextStyles,
+	RedButtonStyles,
 } from "../../styles/HomeStyles";
 
 const HeroDiv = styled.div`
@@ -37,7 +41,8 @@ const SkillsInsightText = styled.span`
 	${SkillsInsightTextStyles}
 `;
 const ContactMeButton = styled.a`
-	${RedButton}
+	${StyledButton}
+	${RedButtonStyles}
 `;
 
 const Home = () => {

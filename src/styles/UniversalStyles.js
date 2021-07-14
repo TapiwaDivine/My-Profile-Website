@@ -14,22 +14,18 @@ const FullScreenDivStyles = css`
 	display: flex;
 `;
 
-const RedButton = css`
+const StyledButton = css`
 	& {
-		color: red;
 		text-decoration: none;
 		position: relative;
 		width: 18rem;
 		height: 6rem;
 		z-index: 1;
-		top: 8rem;
-		left: 0rem;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: 600;
-		color: #b22222;
 		font-size: 1.5rem;
-		border: 3px solid #b22222;
+		border: 3px solid;
 		border-radius: 0.8rem;
 		background-color: transparent;
 		cursor: pointer;
@@ -52,7 +48,6 @@ const RedButton = css`
 		bottom: 0;
 		opacity: 0;
 		content: "";
-		background-color: #b22222;
 	}
 	&:hover:before {
 		transition: 0.3s all ease;
@@ -71,4 +66,4 @@ const RedButton = css`
 	} ;
 `;
 
-export { center, RedButton, FullScreenDivStyles };
+export { center, StyledButton, FullScreenDivStyles };

@@ -73,12 +73,12 @@ const Display_Box_Styles = css`
 `;
 
 const Box_Heading_Styles = css`
-	padding-top: 3rem;
+	padding-top: 1rem;
 	font-size: 3rem;
 `;
 
 const Box_Text_Styles = css`
-	padding-top: 2rem;
+	padding-top: 0.5rem;
 	font-size: 2.3rem;
 `;
 

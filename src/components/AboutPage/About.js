@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 import { PROFILE_DETAIL, PROFILE_IMAGE } from "../../constants";
 import Paragraph from "../shared/Paragraph";
-import { center, FullScreenDivStyles } from "../../styles/index";
+import { center, FullScreenDivStyles } from "../../styles/UniversalStyles";
 import {
 	OutterDivMobileStyles,
 	ImageDivStyles,
